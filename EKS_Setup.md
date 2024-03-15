@@ -1,7 +1,5 @@
-#### EKS_SETUP 
 
-
-### step1-
+# step1-
 
 # Install EKS
 
@@ -21,7 +19,7 @@ eksctl delete cluster --name demo-cluster-three-tier-1 --region us-east-1
 
 
 
-### step2 -
+# step2 -
 
 # commands to configure IAM OIDC provider 
 
@@ -46,7 +44,7 @@ eksctl utils associate-iam-oidc-provider --cluster $cluster_name --approve
 ```
 
 
-### step3-
+# step3-
 
 #setup alb and alb ingress controller
 
@@ -115,7 +113,7 @@ kubectl get deployment -n kube-system aws-load-balancer-controller
 
 
 
-### step4(very imp)-
+# step4(very imp)-
 
 ## adding EBS plugin to EKS So that database(PVC) is configured with EBS
 
